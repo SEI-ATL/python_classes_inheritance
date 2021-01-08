@@ -28,3 +28,26 @@ car1.drive() # equal to 80
 car1.check_gas()
 car1.fill_tank()
 car1.check_gas()
+
+class Zoom():
+    def __init__(self, computer, software, working):
+        self.computer = computer
+        self.software = software
+        self.working = working
+    
+    def __str__(self):
+        return f"Zoom is not working with my {self.computer}"
+    
+    def switch_computer(self):
+        print('Switched to my other mac')
+    
+    def use_zoom_on_firefox(self):
+        print(f"Zoom is lagging on my {self.computer}")
+    
+    def use_zoom_on_chrome(self):
+        print(f"Zoom is not working well on my computer")
+        
+rome_computer = Zoom('Macbook', 'Updated Version', False)
+rome_computer.switch_computer()
+rome_computer.use_zoom_on_chrome()
+rome_computer.use_zoom_on_firefox()
